@@ -36,4 +36,10 @@ public class ErrorValidationTest extends BaseTest {
 	        Boolean match=cartPage.productDisplay(productName);
 	        Assert.assertTrue(match);
 	}
+	
+	 @Test
+	    public Object[][] getGitDataBranch()
+	    {
+	    	return new Object[][] {{"snehal.patil@gmail.com","Snehal@123","ZARA COAT 3"},{"snehal.patil@gmail.com","Sneha@123","ADIDAS ORIGINAL"}};
+	    }
 }
