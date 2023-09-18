@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 public class SubmitOrderTest extends BaseTest {
 	
-    //String productName="ZARA COAT 3";
+    String productName="ZARA COAT 3";
     
 	@Test(dataProvider="getData", groups={"Purchase"})
     public void submitOrder(String userEmail, String password,String productName) throws InterruptedException, IOException
@@ -66,7 +66,12 @@ public class SubmitOrderTest extends BaseTest {
     
    
 
-
+    
+    @Test
+    public Object[][] getGitData()
+    {
+    	return new Object[][] {{"snehal.patil@gmail.com","Snehal@123","ZARA COAT 3"},{"snehal.patil@gmail.com","Sneha@123","ADIDAS ORIGINAL"}};
+    }
 
 }
 
